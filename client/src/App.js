@@ -21,6 +21,8 @@ import PatientDashboard from "./components/patientdashboard/mainpage";
 import DoctorDashboard from "./components/doctordashboard/mainpage";
 import DoctorOTP from "./components/doctordashboard/otp";
 import Profile from "./components/doctordashboard/patientprofile"
+import Landing from "./components/landing/Landing";
+import Footer from "./components/navbar/footer"
 if (localStorage.jwtToken) {
 
   const token = localStorage.jwtToken;
@@ -45,6 +47,7 @@ class App extends Component {
           <Switch>
               <PrivateNavbar  component={Navbar} />
             </Switch>  
+            <Route exact path="/" component={Landing} />
             <Route exact path="/patient/dashboard" component={PatientDashboard} />
             <Route exact path="/doctor/dashboard" component={DoctorDashboard} />
             <Route exact path="/doctor/otp" component={DoctorOTP} />
@@ -55,6 +58,7 @@ class App extends Component {
             <Route exact path="/doctor/verify" component={DoctorVerify} />
             <Route exact path="/doctor/login" component={DoctorLogin} />
             <Route  path="/doctor/profile/:id" component={Profile} />
+            < Footer />
           </div>
         </Router>
       </Provider>

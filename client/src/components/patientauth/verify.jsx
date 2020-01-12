@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import { verifyPatient } from "../../actions/authActions";
 import classnames from "classnames";
 
+import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
+
 class PatientVerify extends Component {
   constructor() {
     super();
@@ -50,12 +53,17 @@ class PatientVerify extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col s8 offset-s2">
+        <div className="col-lg-6 offset-s2">
+          </div>
+          <div className="col-lg-5 offset-s2 mt -4">
+          <Box width ="100%" height="100%"   item xs={12} sm={8} md={5} component={Paper} elevation={6} className="card" >
 
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+            <br/ >
               <h4>
                 <b>Verify </b> 
               </h4>
+              <br/ >
               <p className="grey-text text-darken-1">
                 Already Verfied? <Link to="/login">Log in</Link>
               </p>
@@ -64,7 +72,12 @@ class PatientVerify extends Component {
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
-              
+            <br/ >
+            <br/ >
+            <br/ >
+            <br/ >
+            <br/ >
+            <br/ >
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
@@ -86,7 +99,7 @@ class PatientVerify extends Component {
                   value={this.state.otp}
                   error={errors.otp}
                   id="otp"
-                  type="otp"
+                  type="text"
                   className={classnames("", {
                     invalid: errors.otp
                   })}
@@ -108,8 +121,12 @@ class PatientVerify extends Component {
                 >
                   Verify
                 </button>
+                <br/ >
+                <br/ >
+                <br/ >
               </div>
             </form>
+            </Box>
           </div>
         </div>
       </div>

@@ -21,14 +21,14 @@ export default class mainpage extends Component {
             this.setState({array : response.data});
         });
        }
-       onSubmit()
+  
        fetch_doctor() {
 
          return this.state.array.map(arr =>{
           return (
                  <div class="row">
                      <br />
-                 <div class="card container col-lg-4" style={{backgroundColor : "azure"}}>
+                 <div class="card container col-lg-4">
                          <br />
                          <b> Name : {arr.name} </b>
                          <br />
@@ -60,7 +60,7 @@ export default class mainpage extends Component {
         return (
             <div style={{ marginTop: "100px"}}>
                   <div class="row">
-                      <div class="card col-lg-12 container"> 
+                      <div class="col-lg-12"> 
                        {this.fetch_doctor()}
                       </div>
                   

@@ -59,38 +59,51 @@ class patientprofile extends Component {
                presdisplay= presItems.map((pres) =>
                  <div>
                       <div class =" card conatiner col-lg-10 mx-auto">
-                         <b style={{marginTop: "30px"}}> 
-                          <span  style={{ marginLeft: "20px" }}> Doctor NAME:  {pres.doctor}</span>  
-                          <span style={{marginLeft: "450px"}}> Prescription Number:  {pres.licenseNo} </span> 
-                          </b>
-                          <p style={{marginTop: "30px"}}> 
-                          <span  style={{ marginLeft: "20px" }}> NAME:  {arr.name}</span>  
-                          <span style={{marginLeft: "500px"}}> GENDER:  {arr.sex} </span> 
-                          </p>
-                          <p style={{marginTop: "30px"}}> 
-                          <span  style={{ marginLeft: "20px" }}> Age:  {arr.age}</span>  
-                          <span style={{marginLeft: "550px"}}> Weight:  {arr.weight} </span> 
-                          </p>
-                          <p style={{marginTop: "30px"}}> 
-                          <span  style={{ marginLeft: "20px"  }}> Contact Number:  {arr.phone}</span>  
-                          <span style={{marginLeft: "488px"}}> Email:  {arr.email} </span> 
-                          </p>
-                          <p> Disease Diagonsed : </p>
-                          <div class="card col-lg-12 conatiner"> 
-                                <p> {pres.disease} </p>
+                        < br/>
+                         <p style={{color: "green" ,fontSize:"30px" , fontFamily : "roboto"}} class="center"> MediCore </p>
+                         
+                         <hr />
+                         <h3  style={{ color: "green" , marginLeft: "20px" , fontFamily: "roboto"}}> Patient Details </h3>
+                         <div class="row">
+                            <div class="col-lg-5 ml-3">
+                            <p  > <b> Doctor Name </b>:  {pres.doctor}</p> 
+                            <p > <b> Name</b>:  {arr.name}</p>  
+                            <p  > <b> Age </b>:  {arr.age}</p> 
+                            <p > <b> Contact Number</b>:  {arr.phone}</p>   
+                            </div>
+                            <div class="col-lg-5">
+                            <p > <b> Prescription Number </b>:  {pres.licenseNo} </p> 
+                            <p > <b> Gender </b> :  {arr.sex} </p> 
+                            <p > <b> Weight </b>:  {arr.weight} </p> 
+                            <p > <b> Email </b> :  {arr.email} </p> 
+                            </div>
+                         </div>
+                       
+                         
+                          
+                          <br/>
+                          <h3  style={{ color: "green" , marginLeft: "20px" , fontFamily: "roboto"}}> Diagnosis </h3>
+                          
+                          <hr />
+                                                    <p style={{ marginLeft: "20px" }}> Disease Diagonsed : </p>
+                          <div class="card col-lg-11 container" style={{ marginLeft: "20px" }}  > 
+                                <p > {pres.disease} </p>
                           </div>
-                          <p>  Medicines Suggested  : </p>
-                          <div class="card col-lg-12 conatiner"> 
+                          <p style={{ marginLeft: "20px" }}>  Medicines Suggested  : </p>
+                          <div class="card col-lg-11 conatiner" style={{ marginLeft: "20px" }}> 
                                 <p> {pres.medicines} </p>
                           </div>
-                          <p>  Test Prescribed : </p>
-                          <div class="card col-lg-12 conatiner"> 
+                          <p style={{ marginLeft: "20px" }}>  Test Prescribed : </p>
+                          <div class="card col-lg-11 conatiner" style={{ marginLeft: "20px" }}> 
                                 <p> {pres.test} </p>
                           </div>
-                          <p>  Comments : </p>
-                          <div class="card col-lg-12 conatiner"> 
+                          <p style={{ marginLeft: "20px" }}>  Comments : </p>
+                          <div class="card col-lg-11 conatiner" style={{ marginLeft: "20px" }}> 
                                 <p> {pres.comments} </p>
                           </div>
+                          < br/>
+                          <hr />
+                          <p class="center mb-4 " style={{color: "green"  }}> MediCore Generated Prescription </p>
                     </div>
 
                  </div> );
@@ -189,6 +202,8 @@ class patientprofile extends Component {
                             >
                              Prescribe 
                             </button>
+                            < br/>
+                            < br/>
                         </div>
                         </form>
                    </div>

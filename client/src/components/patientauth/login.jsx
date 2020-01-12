@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import { loginPatient } from "../../actions/authActions";
 import classnames from "classnames";
 
+import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
+
 class PatientLogin extends Component {
   constructor() {
     super();
@@ -54,16 +57,25 @@ class PatientLogin extends Component {
     return (
       <div className="container">
         <div style={{ marginTop: "4rem" }} className="row">
-          <div className="col s8 offset-s2">
+        <div className="col-lg-6 offset-s2 ">
+          </div>
+          <div className="col-lg-5 offset-s2">
+          <Box width ="100%" height="100%"   item xs={12} sm={8} md={5} component={Paper} elevation={6} className="card" >
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+            <br/> 
+              <br/> 
               <h4>
-                <b>Sign In</b>
+                <b>Log In</b>
               </h4>
               <p className="grey-text text-darken-1">
-                Don't have an account? <Link to="/register">Register</Link>
+                Don't have an account? <Link to="/patient/register">Register</Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
+            <br/> 
+            <br/> 
+            <br/> 
+            <br/> 
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
@@ -111,8 +123,11 @@ class PatientLogin extends Component {
                 >
                   Login
                 </button>
+                <br/> 
+            <br/> 
               </div>
             </form>
+            </Box>
           </div>
         </div>
       </div>

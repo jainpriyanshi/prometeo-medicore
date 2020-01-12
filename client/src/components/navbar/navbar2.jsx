@@ -22,8 +22,8 @@ class Navbar2 extends Component {
        <AppBar position="fixed" style={{backgroundColor:"white" , width:"100%", align:"left"}}>
         <Toolbar>
         <Link to =  '/'>
-            <Typography variant="h6"  style={{textAlign:"left", color: "black" , fontFamily:'Roboto'}}>
-              Medico
+            <Typography variant="h6"  style={{textAlign:"left", color: "green" , fontFamily:'Roboto'}}>
+              MediCore
           </Typography>
           </Link>
           <Typography variant="h6"  style={{marginLeft: "auto", color : "black" , fontFamily:'Roboto'}}>

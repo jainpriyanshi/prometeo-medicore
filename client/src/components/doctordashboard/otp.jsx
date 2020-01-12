@@ -27,6 +27,7 @@ export default class mainpage extends Component {
     render() {
         return (
             <div style={{marginTop: "100px"}} class="card conatiner col-lg-6 mx-auto">
+              <h2 style={{fontFamily: "roboto" , marginTop: "30px"}}> Patient Details </h2>
                 <form noValidate onSubmit={this.onSubmit}>
               
               <div className="input-field  mx-auto">

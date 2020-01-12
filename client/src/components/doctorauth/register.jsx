@@ -9,15 +9,6 @@ import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 
 
-var sectionStyle = {
-  position : 'absolute',
-  width: "100%",
-  height: "100%",
- background: `url(${process.env.PUBLIC_URL}/auth_bg.jpg)` ,
- backgroundPosition: 'center',
- backgroundSize: 'cover',
- backgroundRepeat: 'no-repeat'
-};
 
 class RegisterDoctor extends Component {
   constructor() {
@@ -80,7 +71,7 @@ class RegisterDoctor extends Component {
 
     return (
       
-        <div style= {sectionStyle}>
+        <div >
         <br></br>
         
       <div class="container">
@@ -88,6 +79,7 @@ class RegisterDoctor extends Component {
           <div class="col-md-6 col-sm-12 my">
               
               </div>
+              
               <div class="col-md-6 col-sm-12">
               
               <Box width ="100%" height="100%"  item xs={12} sm={8} md={5} component={Paper} elevation={6} className="card" >

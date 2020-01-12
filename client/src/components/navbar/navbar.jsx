@@ -22,26 +22,27 @@ function Navbar() {
   const classes = useStyles();
   return (
     <div className={classes.root} >
-       <AppBar position="static" style={{backgroundColor:"black",width:"100%", align:"left"}}>
+       <AppBar position="static" style={{backgroundColor:"white",width:"100%", align:"left"}}>
         <Toolbar>
             <Typography variant="h6" className={classes.title} style={{textAlign:"left", fontFamily:'Roboto'}}>
             <Link to =  '/'>
-            <Button style={{color:"white"}}>  Medico </Button>
+            <Button style={{color:"green" , fontFamily:'Roboto', fontSize: "20px"}}> <b>  MediCore </b>  </Button>
             </Link>
           </Typography>
           
           <Link to =  '/patient/register'>
-          <Button style={{color:"white"}}>Patient Register</Button>
+          <Button style={{color:"black"}}>Patient Register</Button>
           </Link>
           <Link to =  '/patient/login'>
-          <Button style={{color:"white"}}> Patient Login </Button>
+          <Button style={{color:"black"}}> Patient Login </Button>
           </Link>
           <Link to =  '/doctor/register'>
-          <Button style={{color:"white"}}>Doctor Register</Button>
+          <Button style={{color:"black"}}>Doctor Register</Button>
           </Link>
           <Link to =  '/doctor/login'>
-          <Button style={{color:"white"}}>Doctor Login </Button>
+          <Button style={{color:"black"}}>Doctor Login </Button>
           </Link>
+          
         </Toolbar>
       </AppBar>
     </div>
