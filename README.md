@@ -1,5 +1,4 @@
 # prometeo-medicore
-# codebugs
 
 <h3>Prometeo 2019 Project</h3>
 
