@@ -61,7 +61,7 @@ export default class mainpage extends Component {
                   type="submit"
                   className="btn btn-small waves-effect waves-light hoverable blue accent-3"
                 >
-                  Send OTP
+                  Check
                 </button>
                 <br />
                 <br />

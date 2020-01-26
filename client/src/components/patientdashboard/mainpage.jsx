@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from "react-router-dom"; 
 import axios from "axios";
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
@@ -13,7 +14,7 @@ export default class mainpage extends Component {
         };
       }
 
-    componentDidMount() {
+     componentDidMount() {
         console.log("hey");
         axios.get('/api/doctors')
         .then((response) => {
@@ -48,7 +49,7 @@ export default class mainpage extends Component {
                             }}
                             type="submit"
                             className="btn btn-small waves-effect waves-light hoverable blue accent-3"
-                         >
+                        >
                             Book Appointment
                             </button>
                             <br />
@@ -60,7 +61,23 @@ export default class mainpage extends Component {
         return (
             <div style={{ marginTop: "100px"}}>
                   <div class="row">
+                  
                       <div class="col-lg-12"> 
+                      <Link to ="/profile/5e1b0534290b44038035147e">
+                      <button
+                  style={{
+                    width: "150px",
+                    borderRadius: "3px",
+                    letterSpacing: "1.5px",
+                    marginTop: "1rem"
+                  }}
+                  type="submit"
+                  className="btn btn-small auto waves-effect waves-light hoverable blue accent-3"
+                 >
+                     
+                 Prescriptions
+                </button>
+                </Link>
                        {this.fetch_doctor()}
                       </div>
                   

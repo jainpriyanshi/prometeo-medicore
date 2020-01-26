@@ -90,7 +90,7 @@ class RegisterPatient extends Component {
                 <div class="conainer">
               <div >
               <h4 style={{ margin: "50px 50px "  }}>
-              <b>Sign In</b>
+              <b>Patient Sign In</b>
               </h4>
               </div>
                 <form noValidate onSubmit={this.onSubmit} style={{ margin: "40px 40px"  }}>
@@ -280,7 +280,7 @@ class RegisterPatient extends Component {
                     type="submit"
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                   >
-                    Login
+                    Sign In
                   </button>
                   <p className="grey-text text-darken-1 mt-2 mb-2">
                   Already have an account? <Link to="/login">Log in</Link>

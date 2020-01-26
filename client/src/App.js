@@ -23,6 +23,7 @@ import DoctorOTP from "./components/doctordashboard/otp";
 import Profile from "./components/doctordashboard/patientprofile"
 import Landing from "./components/landing/Landing";
 import Footer from "./components/navbar/footer"
+import dashProfile from "./components/patientdashboard/profile"
 if (localStorage.jwtToken) {
 
   const token = localStorage.jwtToken;
@@ -57,6 +58,7 @@ class App extends Component {
             <Route exact path="/doctor/register" component={DoctorRegister} />
             <Route exact path="/doctor/verify" component={DoctorVerify} />
             <Route exact path="/doctor/login" component={DoctorLogin} />
+            <Route  path="/profile/:id" component={dashProfile} />
             <Route  path="/doctor/profile/:id" component={Profile} />
             < Footer />
           </div>

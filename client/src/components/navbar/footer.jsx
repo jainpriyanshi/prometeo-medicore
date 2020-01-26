@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { BottomNavigation } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,7 +23,7 @@ function Navbar() {
   const classes = useStyles();
   return (
     <div className={classes.root} >
-       <AppBar position="static" style={{backgroundColor:"white",width:"100%", align:"left"}}>
+       <AppBar position="static" style={{marginTop: "150px" , backgroundColor:"white",width:"100%", align:"left" , float: "down"}}>
         
            
              <Typography>

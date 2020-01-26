@@ -264,7 +264,7 @@ class RegisterDoctor extends Component {
                     type="submit"
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                   >
-                    Login
+                  Register
                   </button>
                   <p className="grey-text text-darken-1 mt-2 mb-2">
                   Already have an account? <Link to="/login">Redirect</Link>
